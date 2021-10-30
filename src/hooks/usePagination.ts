@@ -44,12 +44,12 @@ export default function usePaginationObservable<P extends IPaginationParams, T>(
     completed,
     retry
   ] as [
-    typeof params,
-    typeof mergeParams,
-    boolean,
-    IPaginationResponse<T>,
-    typeof error,
-    typeof completed,
-    typeof retry
-  ];
+      typeof params,
+      typeof mergeParams,
+      boolean,
+      IPaginationResponse<T>,
+      typeof error,
+      typeof completed,
+      typeof retry
+    ];
 }

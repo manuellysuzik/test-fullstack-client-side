@@ -1,7 +1,6 @@
 import TableCell from '@material-ui/core/TableCell';
 import TableRow from '@material-ui/core/TableRow';
 import IRequest from 'interfaces/models/requests';
-
 import React, { memo } from 'react';
 
 interface IProps {

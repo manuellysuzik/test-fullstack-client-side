@@ -3,14 +3,16 @@ import Drawer from 'components/Layout/Drawer';
 import AccountMultipleIcon from 'mdi-react/AccountMultipleIcon';
 import StarIcon from 'mdi-react/StarIcon';
 import ViewDashboardIcon from 'mdi-react/ViewDashboardIcon';
+import ShoppingBasketIcon from 'mdi-react/ShoppingBasketIcon'
 import React, { memo, useCallback, useRef, useState } from 'react';
 import { Redirect, Route, Switch } from 'react-router-dom';
 
 import DashboardIndexPage from './Dashboard';
 import SamplePage from './Sample';
 import UserIndexPage from './Users';
+import RequestIndexPage from './Requests';
 
-export const ScrollTopContext = React.createContext<Function>(() => {});
+export const ScrollTopContext = React.createContext<Function>(() => { });
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -37,6 +39,7 @@ const AdminPage = memo((props: {}) => {
   const mainContent = useRef<HTMLDivElement>();
   const [menu] = useState([
     { path: '/', display: 'Dashboard', icon: ViewDashboardIcon },
+    { path: '/request', display: 'Pedidos', icon: ShoppingBasketIcon },
     {
       path: '/usuarios',
       display: 'Usuários',
@@ -56,6 +59,7 @@ const AdminPage = memo((props: {}) => {
           <main ref={mainContent} className={classes.content}>
             <Switch>
               <Route path='/exemplos' component={SamplePage} />
+              <Route path='/request' component={RequestIndexPage} />
               <Route path='/usuarios' component={UserIndexPage} />
               <Route path='/' component={DashboardIndexPage} />
               <Route render={renderRedirect} />

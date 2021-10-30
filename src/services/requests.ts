@@ -1,5 +1,5 @@
-import { IPaginationParams, IPaginationResponse } from 'interfaces/pagination';
 import IRequest from 'interfaces/models/requests';
+import { IPaginationParams, IPaginationResponse } from 'interfaces/pagination';
 import { Observable } from 'rxjs';
 
 import apiService, { ApiService } from './api';
