@@ -1,0 +1,11 @@
+{
+  "project": "manuellysuzik",
+  "repository": "",
+  "endpointDev": "http://localhost:3001",
+  "endpointProd": "",
+  "dockerImage": "waproject/manuellysuzik",
+  "dockerCredentials": "",
+  "sentryDsn": "http://localhost:3000",
+  "confirmed": true,
+  "slug": "manuellysuzik"
+}
