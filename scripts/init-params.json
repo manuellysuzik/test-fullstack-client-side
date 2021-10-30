@@ -5,7 +5,11 @@
   "endpointProd": "",
   "dockerImage": "waproject/manuellysuzik",
   "dockerCredentials": "",
+<<<<<<< HEAD
   "sentryDsn": "http://localhost:3000",
+=======
+  "sentryDsn": "",
+>>>>>>> initial
   "confirmed": true,
   "slug": "manuellysuzik"
 }
