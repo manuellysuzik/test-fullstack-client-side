@@ -23,3 +23,5 @@ yarn start # Não utilizar o docker
 ```
 
 ### Para mais informações veja a pasta ./docs
+
+# PARA USO E REPLICAÇÃO NECESSÁRIA A AUTORIZAÇÃO DA WA PROJECT SOLUCOES TECNOLOGICAS LTDA
